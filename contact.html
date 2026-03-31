@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Ibrahim Bouakel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ══════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="accueil.html" class="nav-logo">IB<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="accueil.html">Accueil</a></li>
+      <li class="nav-dropdown" id="ddProjects">
+        <a href="projets.html">Mes Projets</a>
+        <div class="dropdown-menu">
+          <a href="projets.html#hexagoras">Hexagoras</a>
+          <a href="projets.html#pokemon">Pokémon TCG</a>
+          <a href="projets.html#escape">Escape Game</a>
+        </div>
+      </li>
+      <li><a href="competences.html">Portfolio d'apprentissage</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- Sub-hero -->
+  <div class="sub-hero">
+    <div class="tag-label fu">Me contacter</div>
+    <h1 class="hero-title fu fu1" style="font-size:clamp(2rem,5vw,3.5rem)">Contact</h1>
+    <p class="hero-sub fu fu2">N'hésitez pas à me contacter pour toute opportunité de stage, collaboration ou simple échange.</p>
+  </div>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Colonne gauche : coordonnées + réseaux -->
+        <div>
+          <div class="section-label" style="margin-bottom:1.25rem">Coordonnées directes</div>
+
+          <a href="mailto:ibrahim.bouakel@gmail.com" class="social-link">
+            <div class="social-icon" style="background:rgba(59,130,246,.15);color:#93c5fd;font-size:1.2rem">✉</div>
+            <div class="social-info">
+              <strong>Email</strong>
+              <span>ibrahim.bouakel@gmail.com</span>
+            </div>
+          </a>
+
+          <div class="social-link" style="cursor:default">
+            <div class="social-icon" style="background:rgba(6,182,212,.15);color:#67e8f9;font-size:1.1rem">📍</div>
+            <div class="social-info">
+              <strong>Localisation</strong>
+              <span>34000 Montpellier</span>
+            </div>
+          </div>
+
+          <div class="social-link" style="cursor:default">
+            <div class="social-icon" style="background:rgba(168,85,247,.15);color:#d8b4fe;font-size:1.1rem">📞</div>
+            <div class="social-info">
+              <strong>Téléphone</strong>
+              <span>06 31 81 00 40</span>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin:2rem 0">
+
+          <div class="section-label" style="margin-bottom:1.25rem">Réseaux professionnels</div>
+
+          <a href="https://www.linkedin.com/in/ibrahim-bouakel-201b39346/" target="_blank" rel="noopener" class="social-link">
+            <div class="social-icon" style="background:rgba(10,102,194,.2);color:#93c5fd;font-size:.85rem;font-weight:800;letter-spacing:-.5px">in</div>
+            <div class="social-info">
+              <strong>LinkedIn</strong>
+              <span>ibrahim-bouakel-201b39346</span>
+            </div>
+          </a>
+
+          <a href="https://gitlabinfo.iutmontp.univ-montp2.fr/bouakeli" target="_blank" rel="noopener" class="social-link">
+            <div class="social-icon" style="background:rgba(252,109,38,.15);color:#fdba74;font-size:.75rem;font-weight:700">GL</div>
+            <div class="social-info">
+              <strong>GitLab IUT</strong>
+              <span>gitlabinfo.iutmontp.univ-montp2.fr/bouakeli</span>
+            </div>
+          </a>
+
+          <div style="margin-top:.75rem;padding:1rem 1.25rem;background:var(--bg2);border:1px dashed var(--border);border-radius:10px;font-size:.8rem;color:var(--muted)">
+            💡 D'autres profils (GitHub, Root Me, Itch.io…) à venir dès ouverture des comptes.
+          </div>
+        </div>
+
+        <!-- Colonne droite : CV + disponibilité -->
+        <div>
+          <div class="section-label" style="margin-bottom:1.25rem">Disponibilité</div>
+          <div class="card" style="margin-bottom:1.75rem">
+            <h3 style="color:var(--accent2);margin-bottom:.5rem">🔍 Stage disponible</h3>
+            <p style="margin-bottom:.75rem">Je recherche un stage en <strong style="color:var(--text)">développement web</strong> pour la période du <strong style="color:var(--text)">20 avril au 6 juillet 2025</strong>.</p>
+            <div class="tags">
+              <span class="tag blue">Développement web</span>
+              <span class="tag green">Full Stack</span>
+              <span class="tag">Back-end</span>
+              <span class="tag cyan">PHP / Java</span>
+            </div>
+          </div>
+
+          <!-- CV Download card -->
+          <div class="cv-download-card">
+            <div style="font-size:2.2rem;margin-bottom:.75rem">📄</div>
+            <h3 style="font-family:var(--font-head);font-weight:800;font-size:1.15rem;margin-bottom:.5rem">Curriculum Vitae</h3>
+            <p style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;max-width:320px;margin-left:auto;margin-right:auto">Étudiant BUT Informatique, motivé par des projets ambitieux en développement web et architecture logicielle.</p>
+
+            <!-- Infos rapides CV -->
+            <div style="text-align:left;background:rgba(0,0,0,.25);border-radius:8px;padding:1rem;margin-bottom:1.5rem;font-size:.82rem">
+              <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.4rem;margin-bottom:.4rem">
+                <span style="color:var(--muted)">Formation</span>
+                <span>BUT Informatique (2024–présent)</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.4rem;margin-bottom:.4rem">
+                <span style="color:var(--muted)">Langues</span>
+                <span>Français, Anglais ★★★★, Espagnol ★★★</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:.4rem;margin-bottom:.4rem">
+                <span style="color:var(--muted)">Stack principale</span>
+                <span>Java · PHP · SQL · HTML/CSS</span>
+              </div>
+              <div style="display:flex;justify-content:space-between">
+                <span style="color:var(--muted)">Centres d'intérêt</span>
+                <span>Musculation · Football · Esport</span>
+              </div>
+            </div>
+
+            <!-- Bouton de téléchargement -->
+            <a href="CV-BOUAKEL-Ibrahim.pdf" download="CV-BOUAKEL-Ibrahim.pdf" class="btn btn-download" style="width:100%;justify-content:center;font-size:.85rem">
+              ↓ &nbsp;Télécharger le CV (PDF)
+            </a>
+          </div>
+
+        </div><!-- /col droite -->
+      </div><!-- /contact-grid -->
+    </div>
+  </section>
+
+</div><!-- /page-wrap -->
+
+<footer>
+  <p>Ibrahim Bouakel <span class="dot">·</span>
+    <a href="mailto:ibrahim.bouakel@gmail.com">ibrahim.bouakel@gmail.com</a>
+    <span class="dot">·</span> 34000 Montpellier
+  </p>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

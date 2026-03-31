@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes Projets — Ibrahim Bouakel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ══════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <a href="accueil.html" class="nav-logo">IB<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="accueil.html">Accueil</a></li>
+      <li class="nav-dropdown" id="ddProjects">
+        <a href="projets.html" class="active">Mes Projets</a>
+        <div class="dropdown-menu">
+          <a href="#hexagoras">Hexagoras</a>
+          <a href="#pokemon">Pokémon TCG</a>
+          <a href="#escape">Escape Game</a>
+        </div>
+      </li>
+      <li><a href="competences.html">Portfolio d'apprentissage</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-hamburger" onclick="toggleMenu()" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- ── Sub-hero ───────────────────────────────────── -->
+  <div class="sub-hero">
+    <div class="tag-label fu">3 projets universitaires</div>
+    <h1 class="hero-title fu fu1" style="font-size:clamp(2rem,5vw,3.5rem)">Mes Projets</h1>
+    <p class="hero-sub fu fu2">Projets réalisés dans le cadre du BUT Informatique à l'IUT Montpellier‑Sète.</p>
+  </div>
+
+  <!-- ── Grille aperçu ──────────────────────────────── -->
+  <section>
+    <div class="container">
+      <div class="grid-3">
+
+        <!-- Hexagoras -->
+        <a href="#hexagoras" class="project-card" style="scroll-behavior:smooth">
+          <div class="project-thumb thumb-hexa">
+            <svg width="100%" height="100%" viewBox="0 0 400 200" style="position:absolute;inset:0">
+              <polygon points="200,12 278,56 278,144 200,188 122,144 122,56" fill="none" stroke="rgba(59,130,246,.4)" stroke-width="2"/>
+              <polygon points="200,35 260,70 260,130 200,165 140,130 140,70" fill="none" stroke="rgba(59,130,246,.2)" stroke-width="1"/>
+              <text x="200" y="110" text-anchor="middle" font-family="Syne,sans-serif" font-size="30" font-weight="800" fill="rgba(59,130,246,.5)">H</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Hexagoras</h3>
+            <p>Réseau social politique — questions, réponses et votes. SCRUM en équipe de 5.</p>
+            <div class="tags">
+              <span class="tag blue">PHP</span>
+              <span class="tag blue">SQL</span>
+              <span class="tag cyan">SCRUM</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+            <div class="project-arrow">→</div>
+          </div>
+        </a>
+
+        <!-- Pokémon TCG -->
+        <a href="#pokemon" class="project-card">
+          <div class="project-thumb thumb-poke">
+            <svg width="100%" height="100%" viewBox="0 0 400 200" style="position:absolute;inset:0">
+              <circle cx="200" cy="100" r="72" fill="none" stroke="rgba(239,68,68,.4)" stroke-width="2"/>
+              <line x1="128" y1="100" x2="272" y2="100" stroke="rgba(239,68,68,.5)" stroke-width="2"/>
+              <circle cx="200" cy="100" r="20" fill="none" stroke="rgba(239,68,68,.6)" stroke-width="2.5"/>
+              <circle cx="200" cy="100" r="9" fill="rgba(239,68,68,.3)"/>
+              <path d="M128 100 A72 72 0 0 1 272 100" fill="rgba(239,68,68,.07)"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Pokémon TCG</h3>
+            <p>Jeu de cartes Pokémon en Java — moteur de jeu orienté objet et interface JavaFX.</p>
+            <div class="tags">
+              <span class="tag orange">Java</span>
+              <span class="tag orange">JavaFX</span>
+              <span class="tag">POO</span>
+            </div>
+            <div class="project-arrow">→</div>
+          </div>
+        </a>
+
+        <!-- Escape Game -->
+        <a href="#escape" class="project-card">
+          <div class="project-thumb thumb-escape">
+            <svg width="100%" height="100%" viewBox="0 0 400 200" style="position:absolute;inset:0">
+              <rect x="80" y="42" width="240" height="116" rx="6" fill="none" stroke="rgba(168,85,247,.4)" stroke-width="2"/>
+              <rect x="100" y="56" width="78" height="48" rx="3" fill="none" stroke="rgba(168,85,247,.25)" stroke-width="1"/>
+              <rect x="200" y="56" width="100" height="48" rx="3" fill="none" stroke="rgba(168,85,247,.25)" stroke-width="1"/>
+              <circle cx="200" cy="132" r="10" fill="none" stroke="rgba(168,85,247,.5)" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Escape Game</h3>
+            <p>Site vitrine multi-pages présentant un Escape Game, ses salles et son ambiance.</p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag green">Responsive</span>
+            </div>
+            <div class="project-arrow">→</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       HEXAGORAS DETAIL
+  ════════════════════════════════════════════════════ -->
+  <div id="hexagoras" class="proj-detail" style="background:var(--bg2)">
+    <div class="container">
+      <div style="margin-bottom:2rem">
+        <div class="tag-label">Septembre 2025 – Présent</div>
+        <h2 class="section-title" style="font-size:clamp(1.6rem,4vw,2.5rem)">Hexagoras</h2>
+        <p style="color:var(--muted);max-width:580px">Application web de questions / réponses et votes autour de sujets politiques</p>
+        <div class="tags" style="margin-top:1rem">
+          <span class="tag blue">PHP</span>
+          <span class="tag blue">SQL</span>
+          <span class="tag cyan">SCRUM</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag green">MVC</span>
+          <span class="tag">GitLab</span>
+          <span class="tag">Trello</span>
+          <span class="tag">Discord</span>
+          <span class="tag">Miro</span>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <div class="section-label" style="margin-bottom:.6rem">Contexte</div>
+          <p style="color:var(--muted);font-size:.87rem;margin-bottom:1.25rem">Réalisé dans le cadre du BUT Informatique en parallèle des cours, découpé en <strong style="color:var(--text)">4 sprints Agile SCRUM</strong> avec une équipe de 5 étudiants. Objectif : concevoir une application web complète en conditions proches d'un projet professionnel.</p>
+
+          <div class="section-label" style="margin-bottom:.6rem">Description</div>
+          <ul style="color:var(--muted);font-size:.85rem;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.25rem;list-style:disc">
+            <li>Réseau social politique : création de questions, réponses et votes</li>
+            <li>Espace administrateur avec gestion des utilisateurs et des phases</li>
+            <li>Pages de listes de questions par phase (brouillon, en cours, terminées)</li>
+            <li>Fonctionnalités de recherche et de filtrage</li>
+            <li>Architecture MVC, mots de passe cryptés, gestion des sessions PHP</li>
+          </ul>
+
+          <div class="section-label" style="margin-bottom:.6rem">Mon rôle — Scrum Master</div>
+          <p style="color:var(--muted);font-size:.85rem">Participation active à l'ensemble des fonctionnalités. Rôle de Scrum Master : animation des daily meetings Discord, revues de sprint, adaptation du backlog Trello en fonction des priorités.</p>
+        </div>
+        <div>
+          <div class="section-label" style="margin-bottom:.8rem">Apprentissages critiques mobilisés</div>
+          <div class="ac-list">
+            <div class="ac-item"><strong>AC 3.1 — Comp. 3</strong><p>Sessions PHP pour gestion utilisateurs (admin/utilisateur), pages dynamiques avec listes de questions par phase, navigation entre espaces.</p></div>
+            <div class="ac-item"><strong>AC 3.3 — Comp. 3</strong><p>Accès pages restreints par sessions, mots de passe cryptés en base, rôles différenciés.</p></div>
+            <div class="ac-item c4"><strong>AC 4.1 — Comp. 4</strong><p>BDD structurée (utilisateurs/questions/réponses/votes), jointures multiples pour affichage complet.</p></div>
+            <div class="ac-item c4"><strong>AC 4.2 — Comp. 4</strong><p>Mot de passe crypté en BDD, sessions pour persistance de l'identité utilisateur.</p></div>
+            <div class="ac-item c4"><strong>AC 4.3 — Comp. 4</strong><p>Listes questions filtrées par phase, pages de résultats votes, recherche et filtrage.</p></div>
+            <div class="ac-item c4"><strong>AC 4.4 — Comp. 4</strong><p>Gestion de données hétérogènes : utilisateurs, questions, réponses, votes.</p></div>
+            <div class="ac-item c5"><strong>AC 5.2 — Comp. 5</strong><p>Formalisation des besoins : user stories, backlog produit.</p></div>
+            <div class="ac-item c5"><strong>AC 5.4 — Comp. 5</strong><p>4 sprints SCRUM planifiés, suivi GitLab issues, revues sprint.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════
+       POKÉMON TCG DETAIL
+  ════════════════════════════════════════════════════ -->
+  <div id="pokemon" class="proj-detail">
+    <div class="container">
+      <div style="margin-bottom:2rem">
+        <div class="tag-label">Février – Mai 2025</div>
+        <h2 class="section-title" style="font-size:clamp(1.6rem,4vw,2.5rem)">Pokémon TCG</h2>
+        <p style="color:var(--muted);max-width:580px">Reproduction du fonctionnement d'un jeu de cartes Pokémon en application Java</p>
+        <div class="tags" style="margin-top:1rem">
+          <span class="tag orange">Java</span>
+          <span class="tag orange">JavaFX</span>
+          <span class="tag">POO</span>
+          <span class="tag green">Binôme</span>
+          <span class="tag">GitLab</span>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <div class="section-label" style="margin-bottom:.6rem">Contexte</div>
+          <p style="color:var(--muted);font-size:.87rem;margin-bottom:1.25rem">Réalisé en binôme sur plusieurs mois, organisé en <strong style="color:var(--text)">livrables progressifs</strong> : d'abord le moteur de jeu, puis l'interface graphique JavaFX.</p>
+
+          <div class="section-label" style="margin-bottom:.6rem">Description</div>
+          <ul style="color:var(--muted);font-size:.85rem;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.25rem;list-style:disc">
+            <li>Reproduction des mécaniques TCG Pokémon (PV, attaques, K.O.)</li>
+            <li>Gestion du Pokémon actif, des dégâts, du K.O. et de la pioche</li>
+            <li>Interface graphique complète avec JavaFX</li>
+          </ul>
+
+          <div class="section-label" style="margin-bottom:.6rem">Mon rôle</div>
+          <p style="color:var(--muted);font-size:.85rem;margin-bottom:.5rem">Développement Java de la logique du jeu : classes Pokémon, gestion des PV, attaques, états vivant/K.O.</p>
+          <p style="color:var(--muted);font-size:.85rem">Participation à la création de l'IHM JavaFX pour relier les actions du joueur au code Java.</p>
+        </div>
+        <div>
+          <div class="section-label" style="margin-bottom:.8rem">Apprentissages critiques mobilisés</div>
+          <div class="ac-list">
+            <div class="ac-item"><strong>AC 3.1 — Comp. 3</strong><p>Logique de jeu Java (Pokémon, actifs, attaques), interface JavaFX connectée au moteur.</p></div>
+            <div class="ac-item c4"><strong>AC 4.3 — Comp. 4</strong><p>Interface JavaFX : affichage des PV, état du Pokémon, pioche et banc.</p></div>
+            <div class="ac-item c5"><strong>AC 5.2 — Comp. 5</strong><p>Cahier des charges binôme : mécaniques TCG formalisées.</p></div>
+            <div class="ac-item c5"><strong>AC 5.4 — Comp. 5</strong><p>Livrables progressifs avec objectifs techniques intermédiaires.</p></div>
+          </div>
+          <div style="margin-top:1.5rem;padding:1.2rem;background:var(--bg2);border:1px solid var(--border);border-radius:10px">
+            <div class="section-label" style="margin-bottom:.6rem">Organisation en binôme</div>
+            <p style="font-size:.84rem;color:var(--muted)">Répartition des tâches (logique de jeu / interface), échanges réguliers pour synchroniser le code. Avancement structuré en livrables successifs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════
+       ESCAPE GAME DETAIL
+  ════════════════════════════════════════════════════ -->
+  <div id="escape" class="proj-detail" style="background:var(--bg2)">
+    <div class="container">
+      <div style="margin-bottom:2rem">
+        <div class="tag-label">Octobre – Décembre 2024</div>
+        <h2 class="section-title" style="font-size:clamp(1.6rem,4vw,2.5rem)">Escape Game</h2>
+        <p style="color:var(--muted);max-width:580px">Création d'un site vitrine multi-pages pour présenter un Escape Game et ses salles</p>
+        <div class="tags" style="margin-top:1rem">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag green">Responsive</span>
+          <span class="tag purple">Design</span>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <div class="section-label" style="margin-bottom:.6rem">Contexte</div>
+          <p style="color:var(--muted);font-size:.87rem;margin-bottom:1.25rem">Projet réalisé dans le cadre du BUT Informatique pour apprendre à concevoir un site web complet à partir d'un <strong style="color:var(--text)">besoin client</strong>. Objectif : proposer une maquette fonctionnelle.</p>
+
+          <div class="section-label" style="margin-bottom:.6rem">Description</div>
+          <ul style="color:var(--muted);font-size:.85rem;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.25rem;list-style:disc">
+            <li>Site multi-pages : Accueil, Actus, Rooms, Contact</li>
+            <li>Présentation des salles et de leur ambiance (textes, images, sections)</li>
+            <li>Design responsive, navigation simple et ergonomique</li>
+          </ul>
+
+          <div class="section-label" style="margin-bottom:.6rem">Organisation</div>
+          <p style="color:var(--muted);font-size:.85rem">Travail découpé en étapes : recueil de besoin → conception de la structure → implémentation HTML/CSS.</p>
+        </div>
+        <div>
+          <div class="section-label" style="margin-bottom:.8rem">Apprentissages critiques mobilisés</div>
+          <div class="ac-list">
+            <div class="ac-item c4"><strong>AC 4.3 — Comp. 4</strong><p>Structure multi-pages (Accueil/Rooms/Contact), présentation visuelle des salles.</p></div>
+            <div class="ac-item c5"><strong>AC 5.2 — Comp. 5</strong><p>Recueil des besoins fictif : présentation Escape Game + 3 salles distinctes.</p></div>
+          </div>
+          <div style="margin-top:1.5rem;padding:1.2rem;background:var(--bg3);border:1px solid var(--border);border-radius:10px">
+            <div class="section-label" style="margin-bottom:.6rem">Compétences techniques</div>
+            <p style="font-size:.84rem;color:var(--muted)">Structuration de pages web, organisation de contenu, ergonomie et design responsive. Recherche du besoin client.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<footer>
+  <p>Ibrahim Bouakel <span class="dot">·</span>
+    <a href="mailto:ibrahim.bouakel@gmail.com">ibrahim.bouakel@gmail.com</a>
+    <span class="dot">·</span>
+    <a href="accueil.html">← Retour à l'accueil</a>
+  </p>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
