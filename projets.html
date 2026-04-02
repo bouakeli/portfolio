@@ -20,6 +20,7 @@
           <a href="#hexagoras">Hexagoras</a>
           <a href="#pokemon">Pokémon TCG</a>
           <a href="#escape">Escape Game</a>
+          <a href="#noodle">Noodle</a>
         </div>
       </li>
       <li><a href="competences.html">Portfolio d'apprentissage</a></li>
@@ -35,7 +36,7 @@
 
   <!-- ── Sub-hero ───────────────────────────────────── -->
   <div class="sub-hero">
-    <div class="tag-label fu">3 projets universitaires</div>
+    <div class="tag-label fu">4 projets universitaires</div>
     <h1 class="hero-title fu fu1" style="font-size:clamp(2rem,5vw,3.5rem)">Mes Projets</h1>
     <p class="hero-sub fu fu2">Projets réalisés dans le cadre du BUT Informatique à l'IUT Montpellier‑Sète.</p>
   </div>
@@ -112,12 +113,100 @@
           </div>
         </a>
 
+        <!-- Noodle -->
+        <a href="#noodle" class="project-card">
+          <div class="project-thumb" style="background:linear-gradient(135deg,#0a1520,#0d2d40)">
+            <svg width="100%" height="100%" viewBox="0 0 400 200" style="position:absolute;inset:0">
+              <rect x="100" y="50" width="200" height="100" rx="10" fill="none" stroke="rgba(6,182,212,.4)" stroke-width="2"/>
+              <line x1="100" y1="85" x2="300" y2="85" stroke="rgba(6,182,212,.25)" stroke-width="1"/>
+              <line x1="100" y1="115" x2="300" y2="115" stroke="rgba(6,182,212,.25)" stroke-width="1"/>
+              <rect x="120" y="62" width="50" height="10" rx="3" fill="rgba(6,182,212,.3)"/>
+              <rect x="120" y="91" width="70" height="8" rx="3" fill="rgba(6,182,212,.15)"/>
+              <rect x="120" y="121" width="55" height="8" rx="3" fill="rgba(6,182,212,.15)"/>
+              <circle cx="290" cy="66" r="8" fill="rgba(34,197,94,.3)" stroke="rgba(34,197,94,.5)" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Noodle</h3>
+            <p>Application web de sondages de disponibilités — clone de Doodle avec API REST et AJAX.</p>
+            <div class="tags">
+              <span class="tag cyan">PHP</span>
+              <span class="tag cyan">JavaScript</span>
+              <span class="tag blue">AJAX</span>
+              <span class="tag green">API REST</span>
+            </div>
+            <div class="project-arrow">→</div>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
   <!-- ════════════════════════════════════════════════
-       HEXAGORAS DETAIL
+       NOODLE DETAIL
+  ════════════════════════════════════════════════════ -->
+  <div id="noodle" class="proj-detail">
+    <div class="container">
+      <div style="margin-bottom:2rem">
+        <div class="tag-label" style="border-color:rgba(6,182,212,.3);color:#67e8f9">Janvier – Mars 2025</div>
+        <h2 class="section-title" style="font-size:clamp(1.6rem,4vw,2.5rem)">Noodle</h2>
+        <p style="color:var(--muted);max-width:580px">Application web de sondages pour planifier des événements en trouvant le créneau idéal selon les disponibilités des participants — clone de Doodle</p>
+        <div class="tags" style="margin-top:1rem">
+          <span class="tag cyan">PHP</span>
+          <span class="tag cyan">JavaScript</span>
+          <span class="tag blue">AJAX</span>
+          <span class="tag blue">API REST</span>
+          <span class="tag">JWT</span>
+          <span class="tag green">Twig</span>
+          <span class="tag orange">SQL</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GitLab</span>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <div class="section-label" style="margin-bottom:.6rem">Contexte</div>
+          <p style="color:var(--muted);font-size:.87rem;margin-bottom:1.25rem">SAÉ de 2ème année de BUT Informatique, réalisée en binôme. Objectif : concevoir une application web complète avec un <strong style="color:var(--text)">back-end PHP structuré</strong> (MVC, routage, Twig) et un front dynamique en <strong style="color:var(--text)">JavaScript pur + AJAX</strong>, sans framework front-end.</p>
+
+          <div class="section-label" style="margin-bottom:.6rem">Description</div>
+          <ul style="color:var(--muted);font-size:.85rem;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.25rem;list-style:disc">
+            <li>Création et gestion de sondages de disponibilités (titre, durée, participants minimum…)</li>
+            <li>Invitation de membres, gestion des droits (propriétaire, administrateur, simple membre)</li>
+            <li>Créneaux horaires proposés par les administrateurs, disponibilités saisies par les membres</li>
+            <li>Calcul automatique du <strong style="color:var(--text)">meilleur créneau</strong> selon les contraintes</li>
+            <li>Accès via <strong style="color:var(--text)">code secret</strong> partageable (lecture seule sans compte)</li>
+            <li>Interface dynamique : gestion des créneaux et membres sans rechargement de page (AJAX)</li>
+            <li>API REST avec authentification JWT, bibliothèque réactive maison</li>
+            <li>Virtualisation via Docker (multi-conteneurs)</li>
+          </ul>
+
+          <div class="section-label" style="margin-bottom:.6rem">Mon rôle</div>
+          <p style="color:var(--muted);font-size:.85rem">Développement PHP du back-end (contrôleurs, services, repositories), mise en place de l'API REST avec JWT, dynamisation JavaScript/AJAX de la page de gestion d'un sondage, et virtualisation Docker du projet.</p>
+        </div>
+        <div>
+          <div class="section-label" style="margin-bottom:.8rem">Apprentissages critiques mobilisés</div>
+          <div class="ac-list">
+            <div class="ac-item"><strong>AC 3.1 — Comp. 3</strong><p>Application PHP structurée (MVC, routage, vues Twig), contrôleurs distincts par domaine.</p></div>
+            <div class="ac-item"><strong>AC 3.3 — Comp. 3</strong><p>Authentification JWT, sessions PHP, accès différenciés selon les rôles (propriétaire/admin/membre).</p></div>
+            <div class="ac-item c4"><strong>AC 4.1 — Comp. 4</strong><p>Schéma base de données normalisé : utilisateurs, sondages, créneaux, disponibilités.</p></div>
+            <div class="ac-item c4"><strong>AC 4.2 — Comp. 4</strong><p>Mots de passe hashés, authentification JWT pour l'API REST.</p></div>
+            <div class="ac-item c4"><strong>AC 4.3 — Comp. 4</strong><p>Interface dynamique AJAX, bibliothèque réactive JavaScript maison (TD7).</p></div>
+            <div class="ac-item c5"><strong>AC 5.2 — Comp. 5</strong><p>Analyse du cahier des charges Noodle, formalisation des règles métier complexes.</p></div>
+            <div class="ac-item c5"><strong>AC 5.4 — Comp. 5</strong><p>Virtualisation multi-conteneurs Docker, organisation en livrables successifs.</p></div>
+          </div>
+          <div style="margin-top:1.5rem;padding:1.2rem;background:var(--bg2);border:1px solid var(--border);border-radius:10px">
+            <div class="section-label" style="margin-bottom:.6rem">Points techniques clés</div>
+            <p style="font-size:.84rem;color:var(--muted)">Framework PHP maison développé en TD (routage, conteneur de services, Twig), API REST + JWT, AJAX sans dépendance externe, bibliothèque réactive JavaScript, Docker Compose.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════
+       HEXAGORAS DETAIL (kept below, remove old section tag)
   ════════════════════════════════════════════════════ -->
   <div id="hexagoras" class="proj-detail" style="background:var(--bg2)">
     <div class="container">
@@ -276,8 +365,7 @@
 <footer>
   <p>Ibrahim Bouakel <span class="dot">·</span>
     <a href="mailto:ibrahim.bouakel@gmail.com">ibrahim.bouakel@gmail.com</a>
-    <span class="dot">·</span>
-    <a href="index.html">← Retour à l'accueil</a>
+    <span class="dot">·</span> 34000 Montpellier
   </p>
 </footer>
 
