@@ -3,7 +3,7 @@ function toggleMenu() {
   const nav = document.getElementById('navLinks');
   nav.classList.toggle('open');
 }
-
+ 
 /* Mobile dropdown tap support */
 document.addEventListener('DOMContentLoaded', () => {
   const dd = document.getElementById('ddProjects');
@@ -18,3 +18,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+ 
