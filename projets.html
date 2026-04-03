@@ -151,7 +151,7 @@
   <div id="noodle" class="proj-detail">
     <div class="container">
       <div style="margin-bottom:2rem">
-        <div class="tag-label" style="border-color:rgba(6,182,212,.3);color:#67e8f9">Janvier – Mars 2025</div>
+        <div class="tag-label" style="border-color:rgba(6,182,212,.3);color:#67e8f9">Février – Mars 2025</div>
         <h2 class="section-title" style="font-size:clamp(1.6rem,4vw,2.5rem)">Noodle</h2>
         <p style="color:var(--muted);max-width:580px">Application web de sondages pour planifier des événements en trouvant le créneau idéal selon les disponibilités des participants — clone de Doodle</p>
         <div class="tags" style="margin-top:1rem">
@@ -159,11 +159,8 @@
           <span class="tag cyan">JavaScript</span>
           <span class="tag blue">AJAX</span>
           <span class="tag blue">API REST</span>
-          <span class="tag">JWT</span>
           <span class="tag green">Twig</span>
-          <span class="tag orange">SQL</span>
           <span class="tag">Docker</span>
-          <span class="tag">GitLab</span>
         </div>
       </div>
 
@@ -175,13 +172,10 @@
           <div class="section-label" style="margin-bottom:.6rem">Description</div>
           <ul style="color:var(--muted);font-size:.85rem;padding-left:1.2rem;display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.25rem;list-style:disc">
             <li>Création et gestion de sondages de disponibilités (titre, durée, participants minimum…)</li>
-            <li>Invitation de membres, gestion des droits (propriétaire, administrateur, simple membre)</li>
-            <li>Créneaux horaires proposés par les administrateurs, disponibilités saisies par les membres</li>
-            <li>Calcul automatique du <strong style="color:var(--text)">meilleur créneau</strong> selon les contraintes</li>
-            <li>Accès via <strong style="color:var(--text)">code secret</strong> partageable (lecture seule sans compte)</li>
+            <li>Gestin des utilisateurs par sondages (propriétaire, administrateur, membre)</li>
             <li>Interface dynamique : gestion des créneaux et membres sans rechargement de page (AJAX)</li>
             <li>API REST avec authentification JWT, bibliothèque réactive maison</li>
-            <li>Virtualisation via Docker (multi-conteneurs)</li>
+            <li>Virtualisation via Docker</li>
           </ul>
 
           <div class="section-label" style="margin-bottom:.6rem">Mon rôle</div>
@@ -190,17 +184,13 @@
         <div>
           <div class="section-label" style="margin-bottom:.8rem">Apprentissages critiques mobilisés</div>
           <div class="ac-list">
-            <div class="ac-item"><strong>AC 3.1 — Comp. 3</strong><p>Application PHP structurée (MVC, routage, vues Twig), contrôleurs distincts par domaine.</p></div>
-            <div class="ac-item"><strong>AC 3.3 — Comp. 3</strong><p>Authentification JWT, sessions PHP, accès différenciés selon les rôles (propriétaire/admin/membre).</p></div>
-            <div class="ac-item c4"><strong>AC 4.1 — Comp. 4</strong><p>Schéma base de données normalisé : utilisateurs, sondages, créneaux, disponibilités.</p></div>
-            <div class="ac-item c4"><strong>AC 4.2 — Comp. 4</strong><p>Mots de passe hashés, authentification JWT pour l'API REST.</p></div>
-            <div class="ac-item c4"><strong>AC 4.3 — Comp. 4</strong><p>Interface dynamique AJAX, bibliothèque réactive JavaScript maison (TD7).</p></div>
-            <div class="ac-item c5"><strong>AC 5.2 — Comp. 5</strong><p>Analyse du cahier des charges Noodle, formalisation des règles métier complexes.</p></div>
-            <div class="ac-item c5"><strong>AC 5.4 — Comp. 5</strong><p>Virtualisation multi-conteneurs Docker, organisation en livrables successifs.</p></div>
-          </div>
-          <div style="margin-top:1.5rem;padding:1.2rem;background:var(--bg2);border:1px solid var(--border);border-radius:10px">
-            <div class="section-label" style="margin-bottom:.6rem">Points techniques clés</div>
-            <p style="font-size:.84rem;color:var(--muted)">Framework PHP maison développé en TD (routage, conteneur de services, Twig), API REST + JWT, AJAX sans dépendance externe, bibliothèque réactive JavaScript, Docker Compose.</p>
+            <div class="ac-item"><strong>AC 3.1 </strong><p>Application PHP structurée (MVCS, routage, Twig).</p></div>
+            <div class="ac-item"><strong>AC 3.3 </strong><p>Authentification JWT, sessions PHP, accès selon les rôles.</p></div>
+            <div class="ac-item c4"><strong>AC 4.1</strong><p>Schéma base de données normalisé.</p></div>
+            <div class="ac-item c4"><strong>AC 4.2 </strong><p>Mots de passe hashés, authentification JWT pour l'API REST.</p></div>
+            <div class="ac-item c4"><strong>AC 4.3 </strong><p>Interface dynamique AJAX, bibliothèque réactive JavaScript maison.</p></div>
+            <div class="ac-item c5"><strong>AC 5.2 </strong><p>Analyse du cahier des charges Noodle.</p></div>
+            <div class="ac-item c5"><strong>AC 5.4 </strong><p>Virtualisation multi-conteneurs Docker, organisation en livrables successifs.</p></div>
           </div>
         </div>
       </div>
@@ -213,7 +203,7 @@
   <div id="hexagoras" class="proj-detail" style="background:var(--bg2)">
     <div class="container">
       <div style="margin-bottom:2rem">
-        <div class="tag-label">Septembre 2025 – Présent</div>
+        <div class="tag-label">Septembre 2025 – Janvier 2025</div>
         <h2 class="section-title" style="font-size:clamp(1.6rem,4vw,2.5rem)">Hexagoras</h2>
         <p style="color:var(--muted);max-width:580px">Application web de questions / réponses et votes autour de sujets politiques</p>
         <div class="tags" style="margin-top:1rem">
@@ -306,10 +296,6 @@
             <div class="ac-item c5"><strong>AC 5.2 — Comp. 5</strong><p>Cahier des charges binôme : mécaniques TCG formalisées.</p></div>
             <div class="ac-item c5"><strong>AC 5.4 — Comp. 5</strong><p>Livrables progressifs avec objectifs techniques intermédiaires.</p></div>
           </div>
-          <div style="margin-top:1.5rem;padding:1.2rem;background:var(--bg2);border:1px solid var(--border);border-radius:10px">
-            <div class="section-label" style="margin-bottom:.6rem">Organisation en binôme</div>
-            <p style="font-size:.84rem;color:var(--muted)">Répartition des tâches (logique de jeu / interface), échanges réguliers pour synchroniser le code. Avancement structuré en livrables successifs.</p>
-          </div>
         </div>
       </div>
     </div>
@@ -353,16 +339,12 @@
             <div class="ac-item c4"><strong>AC 4.3 — Comp. 4</strong><p>Structure multi-pages (Accueil/Rooms/Contact), présentation visuelle des salles.</p></div>
             <div class="ac-item c5"><strong>AC 5.2 — Comp. 5</strong><p>Recueil des besoins fictif : présentation Escape Game + 3 salles distinctes.</p></div>
           </div>
-          <div style="margin-top:1.5rem;padding:1.2rem;background:var(--bg3);border:1px solid var(--border);border-radius:10px">
-            <div class="section-label" style="margin-bottom:.6rem">Compétences techniques</div>
-            <p style="font-size:.84rem;color:var(--muted)">Structuration de pages web, organisation de contenu, ergonomie et design responsive. Recherche du besoin client.</p>
-          </div>
         </div>
       </div>
     </div>
   </div>
 
-</div><!-- /page-wrap -->
+</div>
 
 <footer>
   <p>Ibrahim Bouakel <span class="dot">·</span>
